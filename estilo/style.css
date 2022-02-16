@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+:root {
+  --fonte1: "Comic Sans MS";
+  --fonte2: "Segoe Script";
+  --fonte3: "Ubuntu Mono";
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  font-family: var(--fonte3);
+  min-height: 100vh;
+  background-color: darkgray;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+header > h1 {
+  font-family: var(--fonte1);
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-size: 5vw;
+}
+
+header > p {
+  padding-bottom: 50px;
+}
+
+header a,
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+header a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+section {
+  font-family: var(--fonte2);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
+  font-size: 3vw;
+}
+
+section > p {
+  padding-bottom: 2em;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+}
+
+section.imagem {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  box-shadow: inset 6px 6px 13px rgba(24, 24, 24, 0.57);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section.imagem > p {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.405);
+  text-shadow: 2px 2px 0px black;
+}
+
+
+section#cruz {
+  background-image: url('crucificação.jpg');
+  background-position: right center;
+  
+}
+
+section#desfigurado {
+  background-image: url('jesusdesfigurado.jpg');
+  background-position: right center
+
+}
+
+section#tumulo {
+  background-image: url('tumulovazio.jpg');
+  background-position: right center;
+  
+}
+
+section#leao {
+  background-image: url('leao.jpg');
+  background-position: right center;
+}
+
+section#familia {
+  background-image: url('Photo-1\ \(1\).jpeg');
+  background-position: right center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
